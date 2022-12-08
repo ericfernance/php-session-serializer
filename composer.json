@@ -21,8 +21,8 @@
 	},
 	"require": {
 		"php": ">=7.4.0",
-		"wikimedia/at-ease": "^2.0.0",
-		"psr/log": "^1.0"
+		"wikimedia/at-ease": "*",
+		"psr/log": "*"
 	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "40.0.1",
@@ -38,7 +38,6 @@
 			"parallel-lint . --exclude vendor",
 			"phpunit $PHPUNIT_ARGS",
 			"covers-validator",
-			"@phpcs",
 			"phan --allow-polyfill-parser --long-progress-bar",
 			"minus-x check ."
 		],
